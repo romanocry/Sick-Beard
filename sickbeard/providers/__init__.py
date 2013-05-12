@@ -28,6 +28,7 @@ __all__ = ['ezrss',
            't411',
            'cpasbien',
            'piratebay'
+           'gks'
            ]
 
 import sickbeard
