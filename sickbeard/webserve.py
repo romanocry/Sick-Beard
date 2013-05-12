@@ -1231,6 +1231,7 @@ class ConfigProviders:
                       tvtorrents_digest=None, tvtorrents_hash=None,
                       torrentleech_key=None,
                       btn_api_key=None,
+                      gks_key=None,
                       newzbin_username=None, newzbin_password=None,t411_username=None,t411_password=None,
                       provider_order=None):
 
@@ -1301,6 +1302,8 @@ class ConfigProviders:
                 sickbeard.TORRENTLEECH = curEnabled
             elif curProvider == 'btn':
                 sickbeard.BTN = curEnabled
+            elif curProvider == 'gks':
+                sickbeard.GKS = curEnabled
             elif curProvider == 'binnewz':
                 sickbeard.BINNEWZ = curEnabled
             elif curProvider == 't411':
@@ -1320,6 +1323,8 @@ class ConfigProviders:
         sickbeard.TORRENTLEECH_KEY = torrentleech_key.strip()
 
         sickbeard.BTN_API_KEY = btn_api_key.strip()
+        
+        sickbeard.GKS_KEY = gks_key.strip()
 
         sickbeard.T411_USERNAME = t411_username
         sickbeard.T411_PASSWORD = t411_password
